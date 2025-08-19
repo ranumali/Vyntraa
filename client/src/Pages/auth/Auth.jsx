@@ -304,7 +304,7 @@ const Auth = () => {
         }
 
         const res = await axios.post(
-          "http://localhost:8000/api/auth/register",
+          "https://vyntraa.onrender.com/api/auth/register",
           { name, email, password, role: "user" }
         );
 
@@ -320,7 +320,7 @@ const Auth = () => {
           return;
         }
 
-        const res = await axios.post("http://localhost:8000/api/auth/login", {
+        const res = await axios.post("https://vyntraa.onrender.com/api/auth/login", {
           email,
           password,
         });
@@ -344,7 +344,7 @@ const Auth = () => {
   const handleGoogleLogin = async (credentialResponse) => {
     try {
       setLoading(true);
-      const res = await axios.post("http://localhost:8000/api/auth/google", {
+      const res = await axios.post("https://vyntraa.onrender.com/api/auth/google", {
         token: credentialResponse.credential,
       });
 
