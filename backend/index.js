@@ -102,11 +102,6 @@ const PORT = process.env.PORT || 8000;
 const FRONTEND_URL =
   process.env.FRONTEND_URL || "https://vyntraa-ecommerce.onrender.com";
 
-  import { fileURLToPath } from "url";
- 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
- 
 
 // ✅ CORS Setup
 // const allowedOrigins = process.env.ALLOWED_ORIGINS?.split(",") || [
