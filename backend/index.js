@@ -103,6 +103,8 @@ const FRONTEND_URL =
   process.env.FRONTEND_URL || "https://vyntraa-ecommerce.onrender.com";
 
 
+ 
+
 // ✅ CORS Setup
 // const allowedOrigins = process.env.ALLOWED_ORIGINS?.split(",") || [
 //   "https://vyntraa-ecommerce.onrender.com/",
